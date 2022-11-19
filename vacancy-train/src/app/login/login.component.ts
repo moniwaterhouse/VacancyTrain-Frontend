@@ -49,7 +49,7 @@ export class LoginComponent implements OnInit {
 
     if(!this.missingPassword && !this.missingUsername){
       
-      /*this.user = {username: this.username, password: this.password}
+      this.user = {username: this.username, password: this.password}
 
       this.auth.logIn(this.user).pipe(first())
       .subscribe(response => {
@@ -57,12 +57,12 @@ export class LoginComponent implements OnInit {
         console.log(this.user)
         if (this.logInResponse.data.valid == true){
           this.auth.setUsername(this.username);
-          this.route.navigate(['/lights']);
+          this.route.navigate(['/seats']);
         }
         else{
           this.invalidPassword = true;
         }
-      })*/
+      })
 
       
     }

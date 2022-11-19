@@ -19,12 +19,14 @@ import { MatOptionModule } from '@angular/material/core';
 
 import { HttpClientModule } from '@angular/common/http';
 import { RegisterComponent } from './register/register.component';
+import { SeatsComponent } from './seats/seats.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     RegisterComponent,
+    SeatsComponent,
   ],
   imports: [
     BrowserModule,

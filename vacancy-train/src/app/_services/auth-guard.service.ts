@@ -19,11 +19,11 @@ export class AuthGuardService {
   }
 
   logIn(user : LoginInfo){
-    //return this.http.post(`${environment.apiUrl}/login`, user);
+    return this.http.post(`${environment.apiUrl}/login`, user);
   }
 
   signUp(user : RegisterInfo){
-    //return this.http.post(`${environment.apiUrl}/sign_up`, user);
+    return this.http.post(`${environment.apiUrl}/sign_up`, user);
   }
 
 }

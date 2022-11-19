@@ -60,18 +60,18 @@ export class RegisterComponent implements OnInit {
       
       this.user = {username: this.username, password: this.password, name: this.name, email: this.email}
 
-      /*this.auth.signUp(this.user).pipe(first())
+      this.auth.signUp(this.user).pipe(first())
       .subscribe(response => {
         this.signUpResponse = response;
         console.log(this.user)
         if (this.signUpResponse.data.valid == true){
           this.auth.setUsername(this.username);
-          this.route.navigate(['/lights']);
+          this.route.navigate(['/seats']);
         }
         else{
           this.invalidPassword = true;
         }
-      })*/
+      })
 
       
     }
